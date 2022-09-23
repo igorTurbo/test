@@ -2,9 +2,36 @@
   <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease-out"
     class="wrap cc-menu w-nav cby-container">
     <a href="/" class="brand w-nav-brand w--current">
+      {%if section.settings.logo === blank%}
+        {{shop.name}}
+      {%else%}
         <img src="{{ section.settings.logo | img_url: '200x200' }}"/>
+      {%endif%}
     </a>
-    <nav role="navigation" class="nav-menu w-nav-menu"><a href="/" class="menu-item-wrap w--current">
+    <nav role="navigation" class="nav-menu w-nav-menu">
+      {% for link in linklists[section.settings.main_menu].links %}
+        {% if link.links != blank%}
+          <a href="{{}link.url}" class="menu-item-wrap">
+            <div class="menu-item">{{link.title}}</div>
+            <div class="menu-item-deco-line"></div>
+          </a>
+          <div class="dropdown-menu">
+              {% for childlink in link.links %}
+                <a href="{{childlink.url}}" class="menu-item-wrap">
+                  <div class="menu-item">{{childlink.title}}</div>
+                  <div class="menu-item-deco-line"></div>
+                </a>
+              {% endfor%}
+          </div>
+        {% else %}
+          <a href="{{link.url}}" class="menu-item-wrap">
+            <div class="menu-item">{{link.title}}</div>
+            <div class="menu-item-deco-line"></div>
+          </a>
+        {% endif %}
+      {% endfor %}
+
+    {% comment %} <a href="/" class="menu-item-wrap w--current">
         <div class="menu-item">Início</div>
         <div class="menu-item-deco-line"></div>
       </a><a href="/vestidos" class="menu-item-wrap">
@@ -13,7 +40,7 @@
       </a><a href="/casa" class="menu-item-wrap">
         <div class="menu-item">Casa</div>
         <div class="menu-item-deco-line"></div>
-      </a>
+      </a> {% endcomment %}
       <!--<a href="/oficina" class="menu-item-wrap">-->
       <!--    <div class="menu-item">Oficina</div>-->
       <!--    <div class="menu-item-deco-line"></div>-->
