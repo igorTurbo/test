@@ -3,9 +3,10 @@
  data-section-type="slideshow-section" class="single-item">
  
   {%- if section.blocks.size <= 0 -%}
+
     <div>Sem conteudo :(</div>
   {%-else-%}
-    <div class="slide">
+    <div class="biroslideshow_slide slide">
         {%- for block in section.blocks -%}
             <div>
                 <img src="{{block.settings.image | img_url: '1000x1000'}}"/>
@@ -67,6 +68,9 @@
                 "name": "biroslideshow",
                 "category": "Image",
                 "blocks": [
+                    {
+                        "type": "image"
+                    },
                     {
                         "type": "image"
                     }
