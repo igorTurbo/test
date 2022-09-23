@@ -6,9 +6,9 @@
 
     <div>Sem conteudo :(</div>
   {%-else-%}
-    <div class="slideContainer">
+    <div >
         {%- for block in section.blocks -%}
-            <div>
+            <div class="slideContainer">
                 <img src="{{block.settings.image | img_url: '1000x1000'}}" style="width:100%"/>
             </div>
         {%- endfor -%}
