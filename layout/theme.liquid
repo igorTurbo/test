@@ -11,20 +11,18 @@
 
   <meta name="description" content="">
 
-  {% include 'style-tags', layout: 'theme' %}
-
   <script src="{{ 'jquery.min.js' | asset_url }}"></script>
 
   
-  {% include 'script-tags', layout: 'theme' %}
-  
+  {% comment %} {% include 'script-tags', layout: 'theme' %}
+   {% endcomment %}
 
   {{ content_for_header }}
 
 </head>
-
-<body class="{% if template == 'collection' %}search{% endif %} 
-{% if template == 'product' %}product{% endif %}">
+<body>
+{% comment %} <body class="{% if template == 'collection' %}search{% endif %} 
+{% if template == 'product' %}product{% endif %}"> {% endcomment %}
   {% section 'header' %}
   {{ content_for_layout }}
   {% section 'footerb' %}
