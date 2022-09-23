@@ -209,8 +209,9 @@
       }
     },
     "cart": {
-      "cart": "Carrinho",
-      "title": "Carrinho"
+      "genetal": {
+        "title": "Carrinho"
+      }
     },
     "contact": {
       "form": {
