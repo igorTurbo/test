@@ -1,6 +1,7 @@
+
+
 {% if product.available and product.variants.size > 1 %}
-  {% for optionin product.options %}
+  {% comment %} {% for option in product.options %} {% endcomment %}
     {% include 'swatch' with option %}
-  {% endfor %}
-{% else %}
+  {% comment %} {% endfor %} {% endcomment %}
 {% endif %}
