@@ -1,0 +1,35 @@
+{% schema %}
+{
+    "name": "slideshowby",
+    "max_block": 6,
+    "settings": [],
+    "blocks": [
+        {
+            "type": "image",
+            "name": "Slider",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "iamge",
+                    "label": "Imagem"
+                },
+                {
+                    "type": "url",
+                    "id": "button_link",
+                    "label": "url"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Slide show by",
+            "category": "Image",
+            "blocks": [
+                {"type": "image"},
+                {"type": "image"}
+            ]
+        }
+    ]
+}
+{% endschema %}
