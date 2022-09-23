@@ -19,19 +19,14 @@
         </a>
     </div>
     <nav role="navigation" class="nav-menu w-nav-menu">
-        {% comment %} make  a for for each menu at section menu{% endcomment %}
         {% for link in linklists[section.settings.menu].links %}
-            {% comment %} if have links it's a sub menu{% endcomment %}
             {% if link.links != blank %}
-                {% comment %} mount the menu{% endcomment %}
                 <a href="{{ link.url }}" class="menu-item-wrap">
                     <div class="menu-item">{{ link.title }}</div>
                     <div class="menu-item-deco-line"></div>
                 </a>
-                {% comment %} make a each for each submenu{% endcomment %}
                 <div class="dropdown-menu">
-                {% for childlink in link.links %}
-                    {% comment %} mount the submenu {% endcomment %}
+                {% for childlink in link.links %}   
                     <a href="{{ childlink.url }}" class="menu-item-wrap">
                         <div class="menu-item">{{ childlink.title }} </div>
                         <div class="menu-item-deco-line"></div>
@@ -39,7 +34,6 @@
                 {% endfor %}
                 </div>
             {% else %}
-                {% comment %} just mount a link{% endcomment %}
                 <a href="{{ link.url }}" class="menu-item-wrap">
                     <div class="menu-item">{{ link.title }} </div>
                     <div class="menu-item-deco-line"></div>
