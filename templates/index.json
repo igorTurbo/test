@@ -1,6 +1,6 @@
 {
   "sections": {
-    "image_banner": {
+    "header": {
       "type": "image-banner",
       "blocks": {
         "heading": {
@@ -49,11 +49,6 @@
     }
   },
   "order": [
-    "image_banner",
-    "rich_text",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "header"
   ]
 }
