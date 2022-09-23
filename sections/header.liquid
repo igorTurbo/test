@@ -60,3 +60,26 @@
     <div class="w-nav-overlay"></div>
   </div>
 </header>
+
+{% schema %}
+  {
+    "name": "header",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Header"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo image"
+      },
+      {
+        "type": "link_list",
+        "id": "main_menu",
+        "label": "Menu",
+        "default": "main-menu"
+      }
+    ]
+  }
+{% endschema %}
