@@ -2,7 +2,7 @@
   <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease-out"
     class="wrap cc-menu w-nav cby-container">
     <a href="/" class="brand w-nav-brand w--current">
-      {%if section.settings.logo === blank%}
+      {% if section.settings.logo == blank %}
         {{shop.name}}
       {%else%}
         <img src="{{ section.settings.logo | img_url: '200x200' }}"/>
