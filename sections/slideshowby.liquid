@@ -10,7 +10,7 @@
         <div class="flex flex-row w-100vh overflow-hidden">
             {%- for block in section.blocks -%}
                 <div>
-                    <img src="{{block.settings.image | img_url: '1000x1000'}}" class="w-full"/>
+                    <img src="{{block.settings.image}}" class="w-full"/>
                 </div>
             {%- endfor -%}
         </div>
