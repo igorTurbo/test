@@ -6,16 +6,12 @@
 
     <div>Sem conteudo :(</div>
   {%-else-%}
-    <div class="flex flex-column">
-        <div class="flex flex-row w-1000px overflow-hidden">
+    <div class="biroslideshow_slide">
             {%- for block in section.blocks -%}
                 <div>
                     <img src="{{block.settings.image | img_url: '1000x1000'}}" class="w-full"/>
                 </div>
             {%- endfor -%}
-        </div>
-        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
     </div>
   {%- endif -%}
 </div>
