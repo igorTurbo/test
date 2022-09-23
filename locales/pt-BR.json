@@ -209,9 +209,7 @@
       }
     },
     "cart": {
-      "genetal": {
-        "title": "Carrinho"
-      }
+      "cart": "Carrinho"
     },
     "contact": {
       "form": {
@@ -241,6 +239,7 @@
       }
     },
     "cart": {
+      "general": {
       "title": "Carrinho",
       "caption": "Itens do carrinho",
       "remove_title": "Remover {{ title }}",
@@ -266,7 +265,7 @@
       "login": {
         "title": "Tem uma conta?",
         "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Faça login</a> para finalizar a compra com mais rapidez."
-      }
+      }}
     },
     "footer": {
       "payment": "Formas de pagamento"
