@@ -1,5 +1,16 @@
 {
-  "current":{
-      "color_primary_text":"#0C32B6"
+  "current": {
+    "color_primary_text": "#0C32B6",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "main_menu": "main-menu"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
   }
 }
