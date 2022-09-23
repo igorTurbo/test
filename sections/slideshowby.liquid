@@ -9,7 +9,7 @@
     <div class="biroslideshow_slide">
         {%- for block in section.blocks -%}
             <div>
-                <img src="{{block.settings.image | img_url: '1000x1000'}}"/>
+                <img class="center flex flex-row" src="{{block.settings.image | img_url: '1000x1000'}}"/>
             </div>
         {%- endfor -%}
     </div>
