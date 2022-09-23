@@ -6,7 +6,7 @@
 
     <div>Sem conteudo :(</div>
   {%-else-%}
-<div style="display:flex flex-direction:row;">
+<div style="display:flex flex-direction:row">
         {%- for block in section.blocks -%}
             <div>
                 <img src="{{block.settings.image | img_url: '1000x1000'}}" style="width:100%"/>
