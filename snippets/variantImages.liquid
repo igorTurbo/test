@@ -1,4 +1,4 @@
-{% if product.available and product.variants.title > 1 %}
+{% if product.available and product.variants.size > 1 %}
   {% for optionin product.options %}
     {% include 'swatch' with option %}
   {% endfor %}
