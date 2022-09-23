@@ -12,7 +12,8 @@
   <meta name="description" content="">
 
   <script src="{{ 'jquery.min.js' | asset_url }}"></script>
-  <style src="../styles/theme.scss"></style>
+
+  {{ 'theme.scss' | asset_url | stylesheet_tag }}
   
   {% comment %} {% include 'script-tags', layout: 'theme' %}
    {% endcomment %}
