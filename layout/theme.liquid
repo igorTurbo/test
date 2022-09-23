@@ -25,7 +25,10 @@
 {% comment %} <body class="{% if template == 'collection' %}search{% endif %} 
 {% if template == 'product' %}product{% endif %}"> {% endcomment %}
   {% section 'header' %}
-  {{ content_for_layout }}
+  <div class="min-h-screen">
+    {{ content_for_layout }}
+  </div>
+  
   {% section 'footer' %}
 </body>
 </html>
