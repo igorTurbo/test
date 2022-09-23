@@ -1,11 +1,12 @@
 <header className="fixed top-0 right-0 left-0 z-999 bg-white relative-ns">
   <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease-out"
-    class="wrap cc-menu w-nav cby-container"><a href="/" class="brand w-nav-brand w--current">
-      {% if section.settings.logo == blank%}
+    class="wrap cc-menu w-nav cby-container">
+    <a href="/" class="brand w-nav-brand w--current">
+      {%if section.settings.logo === blank%}
         {{shop.name}}
-      {% else %}
+      {%else%}
         <img src="{{ section.settings.logo | img_url: '200x200' }}"/>
-      {% endif %}
+      {%endif%}
     </a>
     <nav role="navigation" class="nav-menu w-nav-menu"><a href="/" class="menu-item-wrap w--current">
         <div class="menu-item">Início</div>
