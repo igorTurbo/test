@@ -46,6 +46,19 @@
       },
       "footer": {
         "type": "footer",
+        "blocks": {
+          "6f1c43c6-5582-4592-a428-b981809797c6": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/output-onlinepngtools.png",
+              "button_link": "",
+              "text_blog": ""
+            }
+          }
+        },
+        "block_order": [
+          "6f1c43c6-5582-4592-a428-b981809797c6"
+        ],
         "settings": {
           "menu": "footer"
         }
