@@ -1,7 +1,3 @@
-/*!
- * CodeBy
- * www.codeby.com.br
- */
  .text-hide,a {
     background-color: transparent
 }
@@ -4529,8 +4525,9 @@ fieldset,figure,ul {
 }
 
 .slick-slide img {
+    display: flex;
     height: auto;
-    width: 100%
+    width: 100%;
 }
 
 .red {
