@@ -6,7 +6,7 @@
 
     <div>Sem conteudo :(</div>
   {%-else-%}
-    <div class="biroslideshow_slide">
+    <div class="biroslideshow_slide slideContainer">
         {%- for block in section.blocks -%}
             <div>
                 <img src="{{block.settings.image | img_url: '1000x1000'}}">
