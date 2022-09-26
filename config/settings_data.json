@@ -19,10 +19,18 @@
               "image": "shopify:\/\/shop_images\/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
               "button_link": ""
             }
+          },
+          "6fe28616-4a6f-4c91-a835-484fea2fbcee": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+              "button_link": ""
+            }
           }
         },
         "block_order": [
-          "7d97fcce-84e9-4831-9bca-4efba5b16b83"
+          "7d97fcce-84e9-4831-9bca-4efba5b16b83",
+          "6fe28616-4a6f-4c91-a835-484fea2fbcee"
         ],
         "settings": {
           "slideshow_height": "adapt"
