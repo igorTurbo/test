@@ -26,11 +26,19 @@
               "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
               "button_link": ""
             }
+          },
+          "e75a2900-c00f-4008-9150-4ce14c75a8bc": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/flatlay-of-jade-face-roller-laying-on-a-grey-stone.jpg",
+              "button_link": ""
+            }
           }
         },
         "block_order": [
           "7d97fcce-84e9-4831-9bca-4efba5b16b83",
-          "6fe28616-4a6f-4c91-a835-484fea2fbcee"
+          "6fe28616-4a6f-4c91-a835-484fea2fbcee",
+          "e75a2900-c00f-4008-9150-4ce14c75a8bc"
         ],
         "settings": {
           "slideshow_height": "adapt"
