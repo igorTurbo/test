@@ -1,34 +1,29 @@
 <!doctype html>
 <html lang="{{ shop.locale }}">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="">
-  <link rel="canonical" href="{{ canonical_url }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="">
+    <link rel="canonical" href="{{ canonical_url }}">
 
-  <title>{{ shop.name }}</title>
+    <title>{{ shop.name }}</title>
 
-  <meta name="description" content="">
+    <meta name="description" content="">
 
-  <script src="{{ 'jquery.min.js' | asset_url }}"></script>
+    <script src="{{ 'jquery.min.js' | asset_url }}"></script>
 
-  {{ 'theme.scss' | asset_url | stylesheet_tag }}
-  
-  {% comment %} {% include 'script-tags', layout: 'theme' %}
-   {% endcomment %}
+    {{ 'theme.scss' | asset_url | stylesheet_tag }}
 
-  {{ content_for_header }}
+    {{ content_for_header }}
 
-</head>
-<body>
-{% comment %} <body class="{% if template == 'collection' %}search{% endif %} 
-{% if template == 'product' %}product{% endif %}"> {% endcomment %}
-  {% section 'header' %}
-  <div class="min-h-screen">
-    {{ content_for_layout }}
-  </div>
-  
-  {% section 'footer' %}
-</body>
+  </head>
+  <body class="{% if template == 'collection' %}search{% endif %} 
+  {% if template == 'product' %}product{% endif %}">
+    {% section 'header' %}
+    <div class="min-h-screen">
+      {{ content_for_layout }}
+    </div>   
+    {% section 'footer' %}
+  </body>
 </html>

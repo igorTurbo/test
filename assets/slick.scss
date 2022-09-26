@@ -41,8 +41,7 @@
 
 .slick-track {
     position: relative;
-    max-width: 1000px;
-    max-height: 1000px;
+    height: 1000px;
     left: 0;
     top: 0;
     display: block;
@@ -66,13 +65,13 @@
 .slick-slide {
     float: left;
     min-height: 1px;
+    height: 100%;
     [dir="rtl"] & {
         float: right;
     }
     img {
         display: block;
-
-    }height: 100%;
+    }
     &.slick-loading img {
         display: none;
     }
