@@ -6,10 +6,10 @@
 
     <div>Sem conteudo :(</div>
   {%-else-%}
-    <div class="biroslideshow_slide">
+    <div class="biroslideshow_slide w-1000px h-1000px">
         {%- for block in section.blocks -%}
             <div>
-                <img src="{{block.settings.image | img_url: '1000x1000'}}" class="h-1000">
+                <img src="{{block.settings.image | img_url: '1000x1000'}}">
             </div>
         {%- endfor -%}
     </div>
