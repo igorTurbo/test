@@ -70,40 +70,6 @@
         "settings": {
           "menu": "footer"
         }
-      },
-      "tree-rows-section": {
-        "type": "tree-rows-section",
-        "blocks": {
-          "fba8873a-f464-4322-beb9-0c0e662a05b7": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/flatlay-of-jade-face-roller-laying-on-a-grey-stone.jpg",
-              "button_link": ""
-            }
-          },
-          "203e2864-9612-4ee3-9440-b1587a3d73a3": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
-              "button_link": ""
-            }
-          },
-          "a18798a4-ba1e-456a-a6a8-15d3e4ae83ce": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
-              "button_link": ""
-            }
-          }
-        },
-        "block_order": [
-          "fba8873a-f464-4322-beb9-0c0e662a05b7",
-          "203e2864-9612-4ee3-9440-b1587a3d73a3",
-          "a18798a4-ba1e-456a-a6a8-15d3e4ae83ce"
-        ],
-        "settings": {
-          "tree-rows-text": "jhgjgh"
-        }
       }
     },
     "content_for_index": [

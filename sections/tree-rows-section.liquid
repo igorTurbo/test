@@ -1,4 +1,4 @@
-<div data-section-id="{{ section.id }}" data-section-type="collection-template" class="search-main-section" id="shelf">
+    {% comment %} <div data-section-id="{{ section.id }}" data-section-type="collection-template" class="search-main-section" id="shelf">
     {% for product in collection.products %}                                    
         <li>
             {% include 'productCardList3', product: product %}                                    
@@ -8,11 +8,11 @@
             {%- assign is_empty_collection = true -%}
         {%endif%}
     {% else %}
-        {% comment %} If don't have any product {% endcomment %}
+        
         {% if is_empty_collection %}
         <div class="grid__item small--text-center">
             <p class="text-center"> Sem produtos :(</p>
         </div>
         {% endif %}
     {%endfor%}
-</div>
+</div> {% endcomment %}
