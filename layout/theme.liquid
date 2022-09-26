@@ -21,9 +21,10 @@
   <body class="{% if template == 'collection' %}search{% endif %} 
   {% if template == 'product' %}product{% endif %}">
     {% section 'header' %}
-    <div class="min-h-1000px max-h-1000px">
+    <div class="min-h-screen">
       {{ content_for_layout }}
-    </div>   
+    </div>
+   
     {% section 'footer' %}
   </body>
 </html>
