@@ -37,6 +37,7 @@
           "879d272c-ad6f-4376-8d32-09c3be522c34": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/shop-local.jpg",
               "button_link": ""
             }
           },
