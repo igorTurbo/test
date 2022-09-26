@@ -33,12 +33,33 @@
               "image": "shopify:\/\/shop_images\/flatlay-of-jade-face-roller-laying-on-a-grey-stone.jpg",
               "button_link": ""
             }
+          },
+          "879d272c-ad6f-4376-8d32-09c3be522c34": {
+            "type": "image",
+            "settings": {
+              "button_link": ""
+            }
+          },
+          "6f832147-f58f-4f22-8e23-762617d7284f": {
+            "type": "image",
+            "settings": {
+              "button_link": ""
+            }
+          },
+          "d13e75c0-b4f9-4eb4-9f3c-983c5d9cb773": {
+            "type": "image",
+            "settings": {
+              "button_link": ""
+            }
           }
         },
         "block_order": [
           "7d97fcce-84e9-4831-9bca-4efba5b16b83",
           "6fe28616-4a6f-4c91-a835-484fea2fbcee",
-          "e75a2900-c00f-4008-9150-4ce14c75a8bc"
+          "e75a2900-c00f-4008-9150-4ce14c75a8bc",
+          "879d272c-ad6f-4376-8d32-09c3be522c34",
+          "6f832147-f58f-4f22-8e23-762617d7284f",
+          "d13e75c0-b4f9-4eb4-9f3c-983c5d9cb773"
         ],
         "settings": {
           "slideshow_height": "adapt"
