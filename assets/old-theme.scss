@@ -3100,7 +3100,7 @@ summary {
 
 .slick-list,.slick-slider,.slick-track {
     position: relative;
-    display: block
+    display: block;
 }
 
 .shadow-hover:focus::after,.shadow-hover:hover::after {
@@ -3166,13 +3166,13 @@ summary {
     -webkit-touch-callout: none;
     -khtml-user-select: none;
     -ms-touch-action: pan-y;
-    touch-action: pan-y
+    touch-action: pan-y;  
 }
 
 .slick-list {
     overflow: hidden;
     margin: 0;
-    padding: 0
+    padding: 0; 
 }
 
 .slick-list:focus {
