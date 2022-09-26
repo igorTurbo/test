@@ -1,6 +1,13 @@
+<script src="{{ 'slick2.min.js' | asset_url }}"></script>
 
-<div class="biroslideshow_slide">
-    {% for product in collections['camiseta'].products %}
-       <a href="{{ product.url | within: collection }}"><img src="{{ product.featured_image.src | img_url: '95x95', scale: 2 }}"></a> 
-    {% endfor %}
+<div class="js-flickity" style="margin: 15px" data-flickity-options='{ "wrapAround": true }'>
+        {% for product in collections['all'].products %}
+            <a class="gallery-cell" href="{{ product.url | within: collection }}">
+                <img class="productImg" style="width: 150px height: 150px" src="{{ product.featured_image.src | img_url: '150x150', scale: 2 }}">
+            </a>
+        {% endfor %}
 </div>
+
+<script>
+    $('.productContainer').slick();
+</script>
