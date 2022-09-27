@@ -1,8 +1,9 @@
-{% paginate search.results by 10 %}
+<div style="min-height: 70vh;">
+{% paginate search.results by 30 %}
 <div class="page-width search-box">
   {% if search.performed == false %}
     <div class="text-center">
-      {% comment %} <h1 class="h2">Search</h1> {% endcomment %}
+      <h1 class="h2">Search</h1>
   {% else %}
     <div class="section-header text-center">
       <h1 class="h2">
@@ -36,7 +37,7 @@
       </div>
 
       {% if search.performed and search.results_count == 0 %}
-        <hr class="hr--small hr--invisible" aria-hidden="true" />
+        <hr class="hr--small hr--invisible" aria-hidden="true" style="width:100%" />
         <div class="rte">
           <p>Search not found :(</p>
         </div>
@@ -48,14 +49,13 @@
     <hr aria-hidden="true" />
   {% endif %}
   <h2 class="visually-hidden"></h2>
-  <ul class="page-width list-view-items">
+  <ul class="page-width list-view-items" style="max-width:1200px;margin: 0 15% 0;">
     {% for item in search.results %}
       <li class="list-view-item">
           {% if item.object_type == 'product' %}
-            {% include 'productCardList3', product: item %}
+            <div style="max-width: 200px; max-height: 267px">{% include 'productCardSearchList', product: item %}</div>
           {% else %}
-            {% include 'productItemList', item: item %}
-            
+            <div style="max-width: 200px; max-height: 267px">{% include 'productItemList', item: item %}</div>
           {% endif %}
       </li>
     {% endfor %}
@@ -67,3 +67,4 @@
 {% endif %}
 
 {% endpaginate %}
+</div>

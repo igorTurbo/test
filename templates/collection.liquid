@@ -8,7 +8,7 @@
                             <ul >
                                 {% for product in collection.products %}                                    
                                     <li style="width:30%">
-                                        {% include 'productCardList3', product: product %}                                    
+                                        <div style="width:100%">{% include 'productCardCollectionList', product: product %}</div>                                    
                                     </li>
                                     {% if collection.handle == 'all' and collection.all_vendors.size == 0 and collection.all_types.size == 0%}
                                     {% else %}

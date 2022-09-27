@@ -1,4 +1,4 @@
-<div style="min-height: 70vh;>
+<div style="min-height: 70vh;">
     <div class="product-template__container page-width" id="ProductSection-{{ section.id }}"
         data-section-id="{{ section.id }}" data-section-type="product" data-enable-history-state="true">
 
@@ -7,8 +7,6 @@
             <div class="row">
                 <div class="fl relative w-100 cby_pr_images">
                     <div class="product-name w-100 tc fw7 f4 fw4-ns f5-ns mt2 mb3">
-                        <div class="fn productName  TRUFA-CAIPIRINHA-DE-LIMAO---135-G ">{{product.title}}</div>
-
                         <div id="product-images">
                             <img class="list-view-item__image"
                                 src="{{ product.featured_image | img_url: '1000x1000', scale: 2 }}" />
@@ -41,7 +39,9 @@
                                         </p>
                                     </div>
                                     <div>
-                                        {% include 'variantImages' %}
+                                        {% for option product.options %}
+                                            {% include 'swatch' with option %}
+                                        {% endfor %}
                                     </div>
                                     {% form 'product', product, id: variant.id %}
                                     <input type="hidden" class="button-variant-id" name="id"/>
