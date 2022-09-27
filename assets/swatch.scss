@@ -22,7 +22,7 @@
     /* The border when the button is not selected */
     border:#ccc 1px solid;
     /* Background color */
-    background-color:#ddd;
+    background-color: white;
     /* Styling text */
     font-size:13px;
     text-align:center;
@@ -152,6 +152,6 @@
   }
 
   .swatch-element.active input + label{
-      background: #55e655;
-      color: white;
+    background: #55e655;
+    color: white;
   }

@@ -8,46 +8,50 @@
                 <div class="fl relative w-100 cby_pr_images">
                     <div class="product-name w-100 tc fw7 f4 fw4-ns f5-ns mt2 mb3">
                         <div id="product-images">
-                            <img class="list-view-item__image"
+                            <img class="productImage"
                                 src="{{ product.featured_image | img_url: '1000x1000', scale: 2 }}" />
                         </div>
                     </div>
                 </div>
                 <div class="fl relative w-100 cby_pr_details tc tl-l">
-                    <div class="cby_pr_details__wrapper">
+                    <div class="cby_pr_details__wrapper" style="display:flex; flex-direction:column; justify-content:space-between; background-color:#dcdcdc; padding: 5px 15px 5px;">
                         <div class="product-name">
-                            <h1>
-                                <div class="fn productName  TRUFA-CAIPIRINHA-DE-LIMAO---135-G ">
+                            <h1 style="display:flex; justify-content:center; align-items:center;">
+                                <div>
                                     {{product.title}}
                                 </div>
                             </h1>
                         </div>
                         {% if product.price > 0%}
-                            <div class="product-price">
-                                <div class="plugin-preco">
-                                    <div class="productPrice">
-                                        <p class="descricao-preco">
-                                            <em class="valor-por price-best-price" style="display: inline-block;">
-                                                Por: <strong class="skuBestPrice">
-                                                    {{product.price}}
-                                                </strong>
-                                            </em>
-                                        </p>
-                                        <p class="preco-a-vista price-cash" style="display: none;">
-                                            Preço a vista:
-                                            <strong class="skuPrice">R$ 1,10</strong>
-                                        </p>
-                                    </div>
+                            <div>
+                                <div class="plugin-preco" >
                                     <div>
-                                        {% for option product.options %}
-                                            {% include 'swatch' with option %}
-                                        {% endfor %}
+                                        {% include 'variantimages' %}
                                     </div>
-                                    {% form 'product', product, id: variant.id %}
-                                    <input type="hidden" class="button-variant-id" name="id"/>
-                                    <button type="submit">Add to cart</button>
-                                    
-                                    {% endform %}
+
+                                    <div style="display:flex; flex-direction:row; justify-content:space-between;">
+                                        <div class="productPrice">
+                                            <p class="descricao-preco">
+                                                <em class="valor-por price-best-price" style="display: inline-block;">
+                                                    Por: <strong class="skuBestPrice">
+                                                        {{ product.price | money }}
+                                                    </strong>
+                                                </em>
+                                            </p>
+                                        </div>
+                                        <div style="display:flex; justify-content:center; align-items:center;">
+                                            {% form 'product', product, id: variant.id %}
+                                                <input type="hidden" class="button-variant-id" name="id"/>
+                                                <button 
+                                                    class="addCartButton"
+                                                    style="background-color: white; padding: 5px;" 
+                                                    type="submit"
+                                                >
+                                                    Add to cart
+                                                </button>
+                                            {% endform %}
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         {% else %}

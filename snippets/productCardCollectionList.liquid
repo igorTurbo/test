@@ -5,7 +5,7 @@
         </a>
         <a class="full-width-link imagemVerso" href="{{ product.url | within: collection }}">
             <button type="button" class="shelve-buy-button white z-4 pointer absolute left-0 bottom-0 bw0 ttu tc pv2 w-100 bg-black">
-            <span>Buy</span>
+                <span>Buy</span>
             </button>
         </a>
     </div>
@@ -20,7 +20,7 @@
 
             {% if product.available and product.price > 0 %}
                     
-                {{ product.price }}
+                {{ product.price | money }}
 
             {%else%}
 

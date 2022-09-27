@@ -27,7 +27,7 @@
                 value="{{ search.terms | escape }}"
                 placeholder="search"
                 aria-label="search"
-                >
+              >
               <span class="input-group__btn">
                 <button id="SearchResultSubmit" class="btn search__submit" type="submit">submit</button>
               </span>
@@ -53,9 +53,13 @@
     {% for item in search.results %}
       <li class="list-view-item">
           {% if item.object_type == 'product' %}
-            <div style="max-width: 200px; max-height: 267px">{% include 'productCardSearchList', product: item %}</div>
+            <div style="max-width: 200px; max-height: 267px">
+              {% include 'productCardSearchList', product: item %}
+            </div>
           {% else %}
-            <div style="max-width: 200px; max-height: 267px">{% include 'productItemList', item: item %}</div>
+            <div style="max-width: 200px; max-height: 267px">
+              {% include 'productItemList', item: item %}
+            </div>
           {% endif %}
       </li>
     {% endfor %}

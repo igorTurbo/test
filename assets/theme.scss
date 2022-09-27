@@ -21,6 +21,12 @@ body {
     flex-direction: column;
 }
 
-footer{
+footer {
     margin-top: auto;
+}
+    
+@media(max-width: 768px) {
+    .productImage {
+        margin-top: 50px;
+    }
 }

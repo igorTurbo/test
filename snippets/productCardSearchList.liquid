@@ -20,7 +20,7 @@
 
             {% if product.available and product.price > 0 %}
                     
-                {{ product.price }}
+                {{ product.price | money }}
 
             {%else%}
 
