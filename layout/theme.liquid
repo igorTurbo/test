@@ -15,8 +15,6 @@
 
     {{ 'theme.scss' | asset_url | stylesheet_tag }}
 
-    {{ content_for_header }}
-
   </head>
   <body class="{% if template == 'collection' %}search{% endif %} 
   {% if template == 'product' %}product{% endif %}">
@@ -24,7 +22,6 @@
     <div class="min-h-screen">
       {{ content_for_layout }}
     </div>
-   
     {% section 'footer' %}
   </body>
 </html>
