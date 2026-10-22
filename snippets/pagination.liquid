@@ -13,7 +13,7 @@
     </li>
   {% endunless %}
   <li class="pagination__text">
-    Página {{{ paginate.current_page }} de {{ paginate.pages }}
+    Página {{ nil }} de {{ paginate.pages }}
   </li>
   {% unless paginate.next.is_link %}
     <li aria-hidden="true">
@@ -28,4 +28,13 @@
       </a>
     </li>
   {% endunless %}
-</ul>
+</ul>{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{{{ paginate.current_page }}"
+  to: "{{ nil }}"
+  position: 485..494
+{%- endcomment -%}
